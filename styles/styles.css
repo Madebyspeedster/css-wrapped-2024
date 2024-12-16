@@ -1,0 +1,64 @@
+@import url("./mpa.css");
+
+* {
+  font-family: "Cubano", "Roboto", sans-serif;
+}
+body {
+  background-color: #ffffff;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0px;
+  width: 250px;
+  height: 100%;
+  background-color: #ffc229;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+.sidebar-header {
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-nav li {
+  cursor: pointer;
+  display: block;
+  padding: 15px 20px;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.sidebar-nav li:hover {
+  background-color: #f5f5f5;
+}
+
+.activeNavElement {
+  background-color: #8bff67;
+  box-shadow: inset 0px 0px 3px #303030;
+}
+
+.container {
+  margin-left: 250px;
+  width: calc(100% - 250px);
+  padding: 20px;
+  box-sizing: border-box;
+}

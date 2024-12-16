@@ -1,0 +1,29 @@
+:root {
+  interpolate-size: allow-keywords;
+}
+div {
+  display: inline-block;
+}
+p {
+  cursor: pointer;
+  padding: 5px;
+  font-size: 30px;
+  transition: width 0.3s;
+  background: #ffc229;
+  width: 30px;
+  overflow: hidden;
+  text-wrap: nowrap;
+  margin: 5px;
+}
+p::before {
+  content: ">";
+  font-weight: bold;
+  padding-right: 20px;
+}
+p:first-letter {
+  text-transform: uppercase;
+}
+
+p:hover {
+  width: max-content;
+}

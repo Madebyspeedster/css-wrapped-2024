@@ -1,0 +1,22 @@
+:root {
+  interpolate-size: allow-keywords;
+}
+
+details summary {
+  cursor: pointer;
+  padding: 5px;
+}
+
+details {
+  border: 1px solid #ccc;
+}
+
+details[open]::details-content {
+  height: auto;
+}
+
+::details-content {
+  transition: all 0.3s ease, content-visibility 0.3s allow-discrete;
+  height: 0;
+  overflow: hidden;
+}

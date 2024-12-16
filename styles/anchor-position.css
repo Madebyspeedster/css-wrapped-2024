@@ -1,0 +1,16 @@
+.anchor {
+  margin: 20px;
+  display: inline-block;
+  anchor-name: --over-easy;
+}
+
+.positioned-element {
+  padding: 5px;
+  background: #ff3939;
+  position: fixed;
+  position-anchor: --over-easy;
+  position-area: center;
+  /* position-area: right; */
+  /* position-area: bottom; */
+  /* position-area: top; */
+}
